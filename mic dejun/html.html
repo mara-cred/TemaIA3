@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--in head sunt informatii despre document care nu sunt vizibile pe pagina-->
+    <meta charset="UTF-8"> <!--asigura includerea oricarui caracter in pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--in ce browser sa se deschida "iE=edge"= sa foloseasca cea mai recenta versiune de redare disponibila-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--pentru redarea paginii pe telefoane-->
+    <title>Yummy</title><!--titlul care va aparea in bara sus-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--stabileste o conexiune cu siteul-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--crossorigin=incarcarea fonturilor dintr o sursa externa-->
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+   
+
+<style>
+    {
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: 'Source Code Pro', monospace;;
+}
+
+section{
+    height:100vh;
+    width:200vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+button {
+    background-color: #bd9cf1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #9385b3;
+}
+.al_doilea_buton{
+    background-color: #bd9cf1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    position:absolute;
+    bottom:100px;
+}
+.primul_buton{
+    background-color: #bd9cf1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="checkbox"]
+{
+    transform: scale(4);
+    color:#bd9cf1;
+}
+input[type="text"] {
+    padding: 10px;
+    position: absolute;
+    font-size: 16px;
+    width: 300px;
+    
+    border: 8px solid #7378c7;
+    border-radius: 4px;
+    color:black;
+
+    bottom: 200px;
+}
+
+input[type="text"]:focus {
+    border-color: #66768f; /* Culoare când textbox-ul este selectat */
+    opacity:0.8;
+color:black;
+
+
+} 
+
+.container{
+    height:100vh;
+    width:200vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    background-image: url(poze/1.resize.jpg);
+background-position:center;
+background-size:cover;
+
+
+}
+.two{
+    background-image: url(poze/2.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+.three{
+    background-image: url(poze/3.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+.four{
+    background-image: url(poze/4.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+.five{
+    background-image: url(poze/5.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+.six{
+    background-image: url(poze/6.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+.seven{
+    background-image: url(poze/7.resize.jpg);
+    background-position:center;
+background-size:cover;
+}
+.eight{
+    background-image: url(poze/8.resize.jpg);
+background-position:center;
+background-size:cover;
+}
+/*pentru pozitionarea textlui centrat sub poze*/
+.cafea .suc .ceai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:30px;
+}
+h3{
+    text-align: center;
+}
+
+
+/*CAFEA*/
+.cafea img:first-child{
+    border-radius:50px;
+    margin:30px;
+}
+.cafea img:last-child{
+    display: none;
+    border-radius:50px;
+    margin:30px;
+}
+.cafea:hover img:first-child{
+    display: none;
+}
+.cafea:hover img:last-child{
+    display: inline-block;
+  
+}
+
+
+/*SUC+LIMONADA*/
+.suc img:first-child{
+    border-radius:50px;
+    margin:30px;
+}
+.suc img:last-child{
+    display:none;
+    border-radius:50px;
+    margin:30px;
+}
+.suc:hover img:first-child{
+    display:none;
+}
+.suc:hover img:last-child{
+    display: inline-block;
+}
+
+
+/*CEAI+LAPTE*/
+.ceai img:first-child{ 
+    border-radius:50px;
+    margin:30px;
+}
+.ceai img:last-child{
+    display:none;
+    border-radius:50px;
+    margin:30px;
+}
+.ceai:hover img:first-child{
+    display: none;
+}
+.ceai:hover img:last-child{
+    display:inline-block;
+}
+
+
+/*SENVIS*/
+.senvis img:first-child{
+    border-radius: 50px;
+    margin:30px;
+}
+.senvis img:last-child{
+    display: none;
+    border-radius: 50px;
+    margin:30px;
+}
+.senvis:hover img:first-child{
+    display:none;
+}
+.senvis:hover img:last-child{
+    display:inline-block;
+}
+
+
+/*OUA*/
+.oua img:first-child{
+    border-radius: 50px;
+    margin:30px;
+}
+.oua img:last-child{
+    display: none;
+    border-radius: 50px;
+    margin:30px;
+}
+.oua:hover img:first-child{
+    display:none;
+}
+.oua:hover img:last-child{
+    display:inline-block;
+}
+
+
+/*OATS+IAURT*/
+.oats img:first-child{
+    border-radius: 50px;
+    margin:30px;
+}
+.oats img:last-child{
+    display: none;
+    border-radius: 50px;
+    margin:30px;
+}
+.oats:hover img:first-child{
+    display:none;
+}
+.oats:hover img:last-child{
+    display:inline-block;
+}
+
+
+/*CROISSANT+CUPCAKE*/
+.pastries img:first-child{
+    border-radius: 50px;
+    margin:30px;
+}
+.pastries img:last-child{
+    display: none;
+    border-radius: 50px;
+    margin:30px;
+}
+.pastries:hover img:first-child{
+    display:none;
+}
+.pastries:hover img:last-child{
+    display:inline-block;
+}
+
+
+/*FRUCTE*/
+.fructe img:first-child{
+    border-radius: 50px;
+    margin:30px;
+}
+.fructe img:last-child{
+    display: none;
+    border-radius: 50px;
+    margin:30px;
+}
+.fructe:hover img:first-child{
+    display:none;
+   
+}
+.fructe:hover img:last-child{
+    display:inline-block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+}
+
+.bauturi{
+    margin-right: 30px;
+    align-items: center;
+    border-radius:50px;
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+
+</style>
+
+
+</head>
+<body>
+<script src="app.js"></script> <!-- face legatura dintre fisierul java si cel html -->
+   <!--div=element de bloc pentru a organiza si aplica stiluri pe un grup de elemente din interiorul lui-->
+   <!--class= alt tip de grupare cu rol in aplicarea stilurilor sau in functii in java-->
+    <div class="container"> <!--la mine de ex un "container" este ceea ce vezi pe ecran inainte sa dai scroll-->
+        <section class="one" id="1"> <!--cum ar veni prima parte a siteului am pus si id pentru functiile din java-->
+            <h1>Buna dimineata!<br> <!--br=linie noua-->
+            <!--h1=titlu, de la h1 la h6, de la mare la mic-->
+                Ziua buna incepe cu un mic dejun delicios, asa ca te invit sa iti alegi cateva feluri de mancare!<br>Cum te cheama?<br></h1>
+            <input type="text" id="introdu_nume" placeholder="Scrieți ceva aici..." /> <!--textbox-->
+<button onclick="treci_la_urmatoarea('2'); ascunde_textbox()" id="primul_buton">Gata</button>
+        <!--"button" doar va crea un buton care nu va face nimic, pot sa scriu orice pe el -->
+        <!--"button onclick="FUNCTIE()/aler('mesaj')" -->
+</section>
+        <section class="two" id="2">
+            <h1>Esti gata sa incepem?</h1>
+            <button onclick="treci_la_urmatoarea('3')" id="al_doilea_buton">Da!</button>
+        </section>
+        <section class="three" id="3">
+            <h1>Hmm..<br>Sa incepem cu o bautura!</h1>
+        </section>
+        <section class="four">
+        <div>
+            <a href="#" class="cafea">
+            <!-- a= creaa linkuri sau ancoreaza pagini web -->
+            <!--a href="#" nu duce nicaieri, folosit pt actiuni java-->
+            <!-- in cazul meu este folosit ca atunci cand utilizatorul da hover cu mouseul peste una din pozele cu cafea sa apara cealalta poza cu cafea -->
+                <img src="poze/cafeacalda.jpg"height="300px" width="300px">
+                <img src="poze/cafearece.jpg"height="300px" width="300px">
+            <!--img pune poze in pagina -->
+            <!--img src="sursa pozei" -->
+            </a>
+            <h3>Cafea calda si rece</h3>
+            <input type="checkbox" id="cafea">
+        </div>
+       <div>
+            <a href="#" class="suc">
+                <img src="poze/suc.jpg"height="300px" width="300px">
+                <img src="poze/limonada.jpg"height="300px" width="300px">
+            </a>
+            <h3>Smoothie si limonada</h3>
+            <input type="checkbox" id="suc">
+        </div>
+        <div>
+            <a href="#" class="ceai">
+                <img src="poze/ceai cald.jpg" height="300px" width="300px">
+                <img src="poze/lapte.jpg" height="300px" width="300px">
+            </a>
+            <h3>Ceai si lapte</h3>
+            <input type="checkbox" id="ceai">
+        </div>
+        </section>
+        <section class="five">
+            <h1>Now onto our main dish...</h1>
+        </section>
+        <section class="six">
+        <div>
+            <a href="#" class="senvis">
+                <img src="poze/senvis2.jpg" height="300px" width="300px">
+                <img src="poze/bagel.jpg" height="300px" width="300px">
+            </a>
+            <h3>Sandwhich sau bagel</h3>
+            <input type="checkbox" id="senvis">
+        </div>
+        <div>
+            <a href="#" class="oua">
+                <img src="poze/ou ochi.jpg" height="300px" width="300px">
+                <img src="poze/ou fiert.jpg" height="300px" width="300px">
+            </a>
+            <h3>Oua</h3>
+            <input type="checkbox" id="oua">
+        </div>
+        <div>
+            <a href="#" class="oats">
+                <img src="poze/porridge.jpg" height="300px" width="300px">
+                <img src="poze/iaurt.jpg" height="300px" width="300px">
+            </a>
+            <h3>Terci de ovaz sau iaurt</h3>
+            <input type="checkbox" id="oats">
+        </div>
+        </section>
+        <section class="seven">
+            <h1>Ce zici de ceva dulce?</h1>
+        </section>
+        <section class="eight">
+            <div>
+                <a href="#" class="pastries">
+                    <img src="poze/croisant.jpg" height="300px" width="300px">
+                    <img src="poze/cupcake.jpg" height="300px" width="300px">
+                </a>
+                <h3>Croissant sau briosa</h3>
+                <input type="checkbox" id="pastries">
+            </div>
+            <div>
+                <a href="#" class="fructe">
+                    <img src="poze/fructe.jpg" height="300px" width="300px">
+                    <img src="poze/fructe2.jpg" height="300px" width="300px">
+                </a>
+                <h3>Fructe</h3>
+                <input type="checkbox" id="fructe">
+                
+            </div>
+      
+
+    </div>
+</body>
+</html>
