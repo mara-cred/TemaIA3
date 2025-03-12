@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--in head sunt informatii despre document care nu sunt vizibile pe pagina-->
+    <meta charset="UTF-8"> <!--asigura includerea oricarui caracter in pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--in ce browser sa se deschida "iE=edge"= sa foloseasca cea mai recenta versiune de redare disponibila-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--pentru redarea paginii pe telefoane-->
+    <title>Yummy
+    </title><!--titlul care va aparea in bara sus-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--stabileste o conexiune cu siteul-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--crossorigin=incarcarea fonturilor dintr o sursa externa-->
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css.css">
+
+
+
+</head>
+<body>
+<script src="app.js"></script> <!-- face legatura dintre fisierul java si cel html -->
+   <!--div=element de bloc pentru a organiza si aplica stiluri pe un grup de elemente din interiorul lui-->
+   <!--class= alt tip de grupare cu rol in aplicarea stilurilor sau in functii in java-->
+    <div class="container"> <!--la mine de ex un "container" este ceea ce vezi pe ecran inainte sa dai scroll-->
+        <section class="one" id="1"> <!--cum ar veni prima parte a siteului am pus si id pentru functiile din java-->
+            <h1>Buna dimineata!<br> <!--br=linie noua-->
+            <!--h1=titlu, de la h1 la h6, de la mare la mic-->
+                Ziua buna incepe cu un mic dejun delicios, asa ca te invit sa iti alegi cateva feluri de mancare!<br>Cum te cheama?<br></h1>
+            <input type="text" id="introdu_nume" placeholder="Scrieți ceva aici..." /> <!--textbox-->
+<button onclick="treci_la_urmatoarea('2'); ascunde_textbox()" id="primul_buton">Gata</button>
+        <!--"button" doar va crea un buton care nu va face nimic, pot sa scriu orice pe el -->
+        <!--"button onclick="FUNCTIE()/aler('mesaj')" -->
+</section>
+        <section class="two" id="2">
+            <h1>Esti gata sa incepem?</h1>
+            <button onclick="treci_la_urmatoarea('3')" id="al_doilea_buton">Da!</button>
+        </section>
+        <section class="three" id="3">
+            <h1>Hmm..<br>Sa incepem cu o bautura!</h1>
+        </section>
+        <section class="four">
+        <div>
+            <a href="#" class="cafea">
+            <!-- a= creaa linkuri sau ancoreaza pagini web -->
+            <!--a href="#" nu duce nicaieri, folosit pt actiuni java-->
+            <!-- in cazul meu este folosit ca atunci cand utilizatorul da hover cu mouseul peste una din pozele cu cafea sa apara cealalta poza cu cafea -->
+                <img src="poze/cafeacalda.jpg"height="300px" width="300px">
+                <img src="poze/cafearece.jpg"height="300px" width="300px">
+            <!--img pune poze in pagina -->
+            <!--img src="sursa pozei" -->
+            </a>
+            <h3>Cafea calda si rece</h3>
+            <input type="checkbox" id="cafea">
+        </div>
+       <div>
+            <a href="#" class="suc">
+                <img src="poze/suc.jpg"height="300px" width="300px">
+                <img src="poze/limonada.jpg"height="300px" width="300px">
+            </a>
+            <h3>Smoothie si limonada</h3>
+            <input type="checkbox" id="suc">
+        </div>
+        <div>
+            <a href="#" class="ceai">
+                <img src="poze/ceai cald.jpg" height="300px" width="300px">
+                <img src="poze/lapte.jpg" height="300px" width="300px">
+            </a>
+            <h3>Ceai si lapte</h3>
+            <input type="checkbox" id="ceai">
+        </div>
+        </section>
+        <section class="five">
+            <h1>Now onto our main dish...</h1>
+        </section>
+        <section class="six">
+        <div>
+            <a href="#" class="senvis">
+                <img src="poze/senvis2.jpg" height="300px" width="300px">
+                <img src="poze/bagel.jpg" height="300px" width="300px">
+            </a>
+            <h3>Sandwhich sau bagel</h3>
+            <input type="checkbox" id="senvis">
+        </div>
+        <div>
+            <a href="#" class="oua">
+                <img src="poze/ou ochi.jpg" height="300px" width="300px">
+                <img src="poze/ou fiert.jpg" height="300px" width="300px">
+            </a>
+            <h3>Oua</h3>
+            <input type="checkbox" id="oua">
+        </div>
+        <div>
+            <a href="#" class="oats">
+                <img src="poze/porridge.jpg" height="300px" width="300px">
+                <img src="poze/iaurt.jpg" height="300px" width="300px">
+            </a>
+            <h3>Terci de ovaz sau iaurt</h3>
+            <input type="checkbox" id="oats">
+        </div>
+        </section>
+        <section class="seven">
+            <h1>Ce zici de ceva dulce?</h1>
+        </section>
+        <section class="eight">
+            <div>
+                <a href="#" class="pastries">
+                    <img src="poze/croisant.jpg" height="300px" width="300px">
+                    <img src="poze/cupcake.jpg" height="300px" width="300px">
+                </a>
+                <h3>Croissant sau briosa</h3>
+                <input type="checkbox" id="pastries">
+            </div>
+            <div>
+                <a href="#" class="fructe">
+                    <img src="poze/fructe.jpg" height="300px" width="300px">
+                    <img src="poze/fructe2.jpg" height="300px" width="300px">
+                </a>
+                <h3>Fructe</h3>
+                <input type="checkbox" id="fructe">
+                
+            </div>
+      
+
+    </div>
+</body>
+</html>
