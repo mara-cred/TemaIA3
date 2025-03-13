@@ -8,3 +8,12 @@ function ascunde_textbox() {
     // Schimbă display-ul la none pentru a-l ascunde
     textbox.style.display = "none";
 }
+function apare_textbox()
+{
+    const textbox = document.getElementById("introdu_nume");
+    textbox.style.display = "block";
+}
+function reseteaza_formularul()
+{
+ document.getElementById("formular_importanta").reset();
+}
