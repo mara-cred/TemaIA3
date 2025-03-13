@@ -75,8 +75,8 @@ color:black;
 } 
 
 .container{
-    height:100vh;
-    width:200vh;
+    height:100%;
+    width:100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     justify-content: center;
@@ -109,7 +109,7 @@ label {
     background-size:cover;
 }
 .zero{
-    background-image: url('https://github.com/mara-cred/TemaIA3/raw/fb172b7032e436180657707e14ef54500c45c0bd/mic%20dejun/poze/zero_poza.png');
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/754489622127629ee9010785cd5c8b2e2d8cb679/zero_poza.png');
     background-position:center;
     background-size:cover;
 }
