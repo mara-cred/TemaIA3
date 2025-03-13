@@ -83,17 +83,6 @@ color:black;
     align-items: center;
 }
 
-.buna_dimi{
-    background-image: url(buna_dimi.png);
-    background-position:center;
-    background-size:cover;
-}
-.zero{
-    background-image: url(zero_poza.png);
-    background-position:center;
-    background-size:cover;
-}
-
 form{
     color: white;
     font-family: 'Source Code Pro', monospace;
@@ -113,6 +102,16 @@ label {
   h1 {
     font-size: 30px; 
     margin: 10px 0; 
+}
+.buna_dimi{
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/8e2d839a15e38df70652d037b1bd1d8cfbc6aa27/mic%20dejun/poze/buna_dimi.png');
+    background-position:center;
+    background-size:cover;
+}
+.zero{
+    background-image: url('https://github.com/mara-cred/TemaIA3/blob/8e2d839a15e38df70652d037b1bd1d8cfbc6aa27/mic%20dejun/poze/zero_poza.png');
+    background-position:center;
+    background-size:cover;
 }
 .one{
     background-image: url('https://github.com/mara-cred/TemaIA3/raw/82b96c8c054a677600ecc0b1fbe90e2d246c1eff/mic%20dejun/poze/1.resize%20-%20Copy%20-%20Copy.jpg');
