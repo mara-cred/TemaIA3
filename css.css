@@ -44,13 +44,15 @@ button:hover {
     font-size: 1.1em;
     cursor: pointer;
     border-radius: 5px;
-}}
+    margin-left: 10px;
+}
 input[type="checkbox"]
 {
     transform: scale(4);
     color:#bd9cf1;
 }
-input[type="text"] {
+input[type="text"], .primul_buton{
+    display: inline-block;
     padding: 10px;
     position: absolute;
     font-size: 16px;
@@ -61,6 +63,7 @@ input[type="text"] {
     color:black;
 
     bottom: 200px;
+    display:none;
 }
 
 input[type="text"]:focus {
@@ -80,6 +83,37 @@ color:black;
     align-items: center;
 }
 
+.buna_dimi{
+    background-image: url(buna_dimi.png);
+    background-position:center;
+    background-size:cover;
+}
+.zero{
+    background-image: url(zero_poza.png);
+    background-position:center;
+    background-size:cover;
+}
+
+form{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    margin-top:20px;
+    font-size: 25px;
+
+}
+input[type="radio"] {
+    transform: scale(2); /* Mărește dimensiunea radio button-ului */
+    margin: 10px;
+}
+label {
+    display: block; /* Se aliniază la stânga */
+    margin-right: 15px; /* Adaugă un spațiu între etichete */
+  }
+  h1 {
+    font-size: 30px; 
+    margin: 10px 0; 
+}
 .one{
     background-image: url('https://github.com/mara-cred/TemaIA3/raw/82b96c8c054a677600ecc0b1fbe90e2d246c1eff/mic%20dejun/poze/1.resize%20-%20Copy%20-%20Copy.jpg');
 background-position:center;
@@ -122,6 +156,27 @@ background-size:cover;
 background-position:center;
 background-size:cover;
 }
+.nine{
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/3eca03352ce0056df9a5142b96e8f79a1dc57428/mic%20dejun/poze/verde.png');
+background-position:center;
+background-size:cover;
+}
+.ten{
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/3eca03352ce0056df9a5142b96e8f79a1dc57428/mic%20dejun/poze/verde_inchis.png');
+    background-position:center;
+    background-size:cover;
+}
+.eleven{
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/3eca03352ce0056df9a5142b96e8f79a1dc57428/mic%20dejun/poze/354d41.png');
+    background-position:center;
+    background-size:cover;
+}
+.twelve{
+    background-image: url('https://github.com/mara-cred/TemaIA3/raw/3eca03352ce0056df9a5142b96e8f79a1dc57428/mic%20dejun/poze/verde_foarte_inchis.png');
+    background-position:center;
+    background-size:cover;
+}
+
 /*pentru pozitionarea textlui centrat sub poze*/
 .cafea .suc .ceai{
     display: flex;
@@ -291,4 +346,36 @@ h3{
 body{
     display:flex;
     justify-content: center;
+}
+.mesaje_feedback {
+    display: flex;
+    flex-direction: column; /* Așează elementele unul sub altul */
+    align-items: center; /* Aliniază totul pe centru */
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px; /* Dimensiunea sliderului */
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0 10px;
+}
+
+select{
+    width: 200px; /* Lățime */
+        padding: 10px; /* Spațiere internă */
+        font-size: 20px; /* Dimensiunea textului */
+        border: 2px solid #577a65; /* Bordură albastră */
+        border-radius: 5px; /* Colțuri rotunjite */
+        background-color: #939694; /* Fundal gri deschis */
+        color: #000000; /* Culoarea textului */
+        cursor: pointer; /* Cursor pointer */
+}
+.optiuni_val_nutri{
+    font-size: 30px;
 }
