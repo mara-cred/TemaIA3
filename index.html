@@ -18,9 +18,46 @@
 <script src="app.js"></script> <!-- face legatura dintre fisierul java si cel html -->
    <!--div=element de bloc pentru a organiza si aplica stiluri pe un grup de elemente din interiorul lui-->
    <!--class= alt tip de grupare cu rol in aplicarea stilurilor sau in functii in java-->
-    <div class="container"> <!--la mine de ex un "container" este ceea ce vezi pe ecran inainte sa dai scroll-->
-        <section class="one" id="1"> <!--cum ar veni prima parte a siteului am pus si id pentru functiile din java-->
-            <h1>Buna dimineata!<br> <!--br=linie noua-->
+   <div class="container"> <!--la mine de ex un "container" este ceea ce vezi pe ecran inainte sa dai scroll-->
+        
+    <section class="buna_dimi" id="buna">
+        <h1> Buna dimineata! <br> Inainte sa incepem am o intrebare pentru tine</h1>
+    </section>
+    
+    
+    
+    <section class="zero" id="0">
+
+<!--radiobutton, name="importanta" ca utilizatorul sa poata selecta o singura optiune-->
+<form id="formular_importanta">
+    <h1>Cat de important ți se pare micul dejun?</h1>
+
+    <label>
+        <input type="radio" name="importanta" value="Nu">
+        Nu mi se pare deloc important
+    </label>
+
+    <label>
+        <input type="radio" name="importanta" value="Meh">
+        Este destul de important, însă nu este o prioritate în rutina mea de dimineață
+    </label>
+
+    <label>
+        <input type="radio" name="importanta" value="Da">
+        Consider că este cea mai importantă masă a zilei
+    </label>
+
+    <button type="button" onclick="treci_la_urmatoarea('1'); apare_textbox()" id="zero_buton">Am selectat</button>
+    <button type="button" onclick="reseteaza_formularul()">Vreau sa aleg alta optiune</button>
+</form>
+        </section>
+    
+
+
+
+    
+    <section class="one" id="1"> <!--cum ar veni prima parte a siteului am pus si id pentru functiile din java-->
+            <h1> <!--br=linie noua-->
             <!--h1=titlu, de la h1 la h6, de la mare la mic-->
                 Ziua buna incepe cu un mic dejun delicios, asa ca te invit sa iti alegi cateva feluri de mancare!<br>Cum te cheama?<br></h1>
             <input type="text" id="introdu_nume" placeholder="Scrieți ceva aici..." /> <!--textbox-->
@@ -116,8 +153,34 @@
                 <input type="checkbox" id="fructe">
                 
             </div>
-      
+        </section>
+        <section class="nine">
+            <h1>Pofta buna!</h1>
+            <h1>Cum ti s-a parut aceasta experienta?</h1>
+            <div class="mesaje_feedback">
+                <div class="slider-container">
+                    <h1>Nu mi-a placut</h1>
+                    <input type="range" id="slide_feedback">
+                    <h1>Mi-a placut</h1>
+                </div>
+            </div>
+        </section>
+        <section class="ten">
+            <h1>Pentru a verifica valorile nutritionale ale mancarurilor alese de tine te invit sa accesezi <a href="!!!!!!" download> aceasta pagina de excel </a> </h1>
+        </section>
+        <section class="eleven">
+            <!--dropdown list-->
+            <label for="optiuni" class="optiuni_val_nutri">Esti multumit de valorile nutritionale ale micului dejun?</label>
+<select id="optiuni_val_nutri"> <!-- dropdown list-->
+    <option value="optiunea1">Am ales un mic dejun potrivit</option>
+    <option value="optiunea2">Am ales un mic dejun prea slab din punct de vedere nutritional</option>
+    <option value="optiunea3">Am ales un mic dejun nesanatos si nepotrivit nevoilor corpului meu</option>
+</select>
+        </section>
 
+        <section class="twelve">
+<h1> Aceasta pagina web a fost realizata cu ajutorul indicatiilor de pe site-ul <a href="https://www.w3schools.com/">w3schools</a><br>Toate pozele, inclusiv cele de pe fundal, au fost desenate de mine!<br> Multumesc ca mi-ai vizitat pagina web!</h1>
+        </section>
     </div>
 </body>
 </html>
